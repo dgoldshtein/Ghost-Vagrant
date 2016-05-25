@@ -25,14 +25,6 @@ git clone git://github.com/TryGhost/Ghost-Vagrant.git
 cd Ghost-Vagrant
 ```
 
-You will now need a copy of Ghost itself:
-
-```bash
-git clone git://github.com/Tryghost/Ghost.git
-```
-
-Now we have both repos cloned, we can proceed with setting up the VM:
-
 ```bash
 vagrant up
 ```
