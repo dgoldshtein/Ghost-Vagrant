@@ -39,6 +39,7 @@ Vagrant.configure("2") do |config|
   config.vm.hostname = vm_external_config["hostname"]
 
   config.vm.synced_folder vm_external_config["ghost_path"], "/home/vagrant/code/Ghost", :nfs => true
+  config.vm.synced_folder "Wave", "/home/vagrant/code/Wave", :nfs => true
 
   config.vm.provider :virtualbox do |vb|
     vb.customize ["modifyvm", :id, "--memory", vm_external_config["memory"]]
