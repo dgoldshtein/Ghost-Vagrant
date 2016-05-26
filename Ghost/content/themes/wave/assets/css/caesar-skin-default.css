@@ -3,7 +3,9 @@
   Caesar Default Skin - <3 mikedidthis
 
 */
-@import url("//fonts.googleapis.com/css?family=Roboto:300,500|Roboto:300");
+/*@body-font:                              ~'Helvetica Neue';*/
+/*@import url("//fonts.googleapis.com/css?family=@{body-font}:@{body-normal},@{body-bold}|@{heading-font}:@{heading-normal}");*/
+@import url("//fonts.googleapis.com/css?family=Merriweather:normal,bold");
 a {
   color: #1976d2;
 }
@@ -21,11 +23,11 @@ code {
   background-color: #f0f0f0;
 }
 .form-label {
-  font-weight: 300;
+  font-weight: normal;
 }
 .form-input {
-  font-family: Roboto;
-  font-weight: 300;
+  font-family: Merriweather;
+  font-weight: normal;
   border: 1px solid #e8e8e8;
   box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.075);
 }
@@ -137,19 +139,19 @@ h6,
 .msg-back,
 p.post-more,
 .post--quote .post-body blockquote:first-of-type {
-  font-family: Roboto;
-  font-weight: 500;
+  font-family: Helvetica Neue;
+  font-weight: bold;
   color: #1c1c1c;
 }
 body,
 .p {
-  font-family: Roboto;
-  font-weight: 300;
+  font-family: Merriweather;
+  font-weight: normal;
   color: #4a4a4a;
 }
 strong,
 b {
-  font-weight: 500;
+  font-weight: bold;
 }
 .dialogue,
 .post--chat .post-body ul:first-of-type {
@@ -479,7 +481,7 @@ p.post-more a {
   color: inherit;
 }
 .post-body th {
-  font-weight: 500;
+  font-weight: bold;
 }
 .post-body th:after {
   border-bottom: 1px solid #e8e8e8;
@@ -501,7 +503,7 @@ p.post-more a {
   color: #999999;
 }
 .post--chat .post-body ul:first-of-type > li > strong {
-  font-weight: 300;
+  font-weight: normal;
 }
 .post--chat .post-body ul:first-of-type > li > em {
   font-style: normal;

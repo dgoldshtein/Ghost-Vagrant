@@ -31,16 +31,11 @@ a:after,
 [data-js~="sidebar"],
 .post--overlay .overlay + .post-sidebar,
 .post--overlay .overlay + .post-sidebar + .post-body .post-meta {
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  -webkit-perspective: 1000;
-          perspective: 1000;
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000;
+  transform: translateZ(0);
   transition-duration: .25s;
-  transition-property: opacity, visibility, -webkit-transform;
   transition-property: opacity, visibility, transform;
-  transition-property: opacity, visibility, transform, -webkit-transform;
 }
 .ani-center,
 [data-js~="main"][data-js~="main-start"] .main-item:not( .main-post ),
@@ -49,16 +44,14 @@ a:after,
 .post--overlay .post-wrapper:hover [data-js~="overlay-active"] + .post-sidebar,
 .post--overlay .post-wrapper:hover [data-js~="overlay-active"] + .post-sidebar + .post-body .post-meta,
 [data-js~="sidebar"][data-js~="sidebar-start"] {
-  -webkit-transform: translate(0, 0);
-          transform: translate(0, 0);
+  transform: translate(0, 0);
 }
 .ani-down,
 [data-js~="click-active"] > *,
 [data-js~="main"] .main-item,
 .post--overlay .overlay + .post-sidebar + .post-body .post-meta,
 [data-js~="sidebar"] {
-  -webkit-transform: translateY(8px);
-          transform: translateY(8px);
+  transform: translateY(8px);
 }
 .ani-hide,
 [data-js~="click"] > *,
@@ -76,8 +69,7 @@ a:after,
 }
 .ani-left,
 .nav-prev:hover:before {
-  -webkit-transform: translateX(-4px);
-          transform: translateX(-4px);
+  transform: translateX(-4px);
 }
 .ani-right,
 .form-btn:hover,
@@ -85,8 +77,7 @@ a:after,
 .nav-next:hover:after,
 .post-more > a:hover:after,
 .post--link .post-body p:first-of-type > a:hover:after {
-  -webkit-transform: translateX(4px);
-          transform: translateX(4px);
+  transform: translateX(4px);
 }
 .ani-show,
 [data-js~="click-active"] > *,
@@ -109,8 +100,7 @@ a:after,
 [data-js~="main"] .main-header,
 .post--overlay .overlay-close,
 .post--overlay .overlay + .post-sidebar {
-  -webkit-transform: translateY(-8px);
-          transform: translateY(-8px);
+  transform: translateY(-8px);
 }
 /* Base */
 @-ms-viewport {
@@ -1147,7 +1137,6 @@ hr,
   word-break: break-all;
   word-break: break-word;
   -webkit-hyphens: auto;
-  -moz-hyphens: auto;
   -ms-hyphens: auto;
       hyphens: auto;
 }
@@ -1245,8 +1234,7 @@ hr,
   top: 50%;
   max-height: 100%;
   width: auto;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 .main-nav {
   position: relative;
@@ -1375,8 +1363,7 @@ hr,
     height: auto;
   }
   [data-js~="main"] .main-item {
-    -webkit-transform: translateX(-8px);
-            transform: translateX(-8px);
+    transform: translateX(-8px);
   }
   .main-wrapper {
     max-width: 100%;
@@ -1410,8 +1397,7 @@ hr,
   .main-nav[data-js~="click-active"] .popup {
     opacity: 1;
     visibility: visible;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
   .main-nav:before,
   .main-nav .popup:before,
@@ -1788,7 +1774,6 @@ p.post-wide {
   word-break: break-all;
   word-break: break-word;
   -webkit-hyphens: auto;
-  -moz-hyphens: auto;
   -ms-hyphens: auto;
       hyphens: auto;
 }
@@ -1858,12 +1843,10 @@ p.post-wide {
 }
 @media (min-width: 721px) {
   .post--overlay .overlay-close {
-    -webkit-transform: translateX(8px);
-            transform: translateX(8px);
+    transform: translateX(8px);
   }
   .post--overlay .overlay + .post-sidebar {
-    -webkit-transform: translateX(-8px);
-            transform: translateX(-8px);
+    transform: translateX(-8px);
   }
   .post--overlay .post-body .post-meta {
     display: none;
@@ -1974,8 +1957,7 @@ p.post-wide {
     display: none;
   }
   [data-js~="sidebar"] {
-    -webkit-transform: translateX(8px);
-            transform: translateX(8px);
+    transform: translateX(8px);
   }
 }
 @media (min-width: 1353px) {
@@ -2024,8 +2006,7 @@ p.post-wide {
   right: 0;
   left: 0;
   padding-right: 0;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 .widget-meta {
   position: absolute;
@@ -2035,8 +2016,7 @@ p.post-wide {
   width: auto;
   padding-right: 0;
   margin-bottom: 0;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   text-align: center;
 }
 .widget-meta .overlay-item {
